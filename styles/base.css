@@ -4,6 +4,10 @@
     --secondary-color: #2f2f2f;
     --accent-color: #f4f4f4;
     --text-color: #222;
+
+    --white: #ffffff;
+    --border-color: #cccccc;
+    --light-yellow: #ffe66d;
     /*fonts*/
     --heading-font: "Lora", serif;
     --body-font: "Roboto", sans-serif;
@@ -17,12 +21,12 @@ body {
     margin: 0;
     font-family: var(--body-font);
     color: var(--text-color);
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 header {
     background-color: var(--primary-color);
-    color:white;
+    color: var(--white);
     text-align: center;
 }
 
@@ -43,14 +47,14 @@ nav {
 nav a {
     flex: 1 1 auto;
     display: block;
-    color: white;
+    color: var(--white);
     text-decoration: none;
     padding: 1rem;
     text-align: center;
 }
 
 nav a:hover {
-    background-color: white;
+    background-color: var(--white);
     color: var(--secondary-color);
     font-weight: 700;
 }
@@ -75,14 +79,14 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
-    background-color:white;
+    background-color: var(--white);
 }
 
 .card h2 {
     margin: 0;
     padding: 0.75rem;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white);
     text-align: center;
     font-family: var(--heading-font);
 }
@@ -101,7 +105,7 @@ h1 {
 
 footer {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white);
     text-align: center;
     padding: 1rem;
     margin-top: 1rem;
@@ -112,6 +116,6 @@ footer p {
 }
 
 #lastModified {
-    color: #ffe66d;
+    color: var(--light-yellow);
     font-size: 0.9rem;
 }
