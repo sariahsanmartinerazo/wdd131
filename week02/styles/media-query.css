@@ -1,8 +1,8 @@
-* :root {
+:root {
     --primary-color: #bbb;
     --secondary-color: #e6f2ff;
-    --ter--color: #fff;
-    --one: #000
+    --ter-color: #fff;
+    --one: #000;
 }
 
 body {
