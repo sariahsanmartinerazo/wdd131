@@ -17,11 +17,6 @@ header, main, footer {
     background-color: var(--secondary-color);
 }
 
-header {
-    background-color: var(--one);
-    color: var(--ter--color);
-}
-
 main {
     display: grid;
     grid-template-columns: 1fr ;
