@@ -2,7 +2,9 @@
     --primary-color: #bbb;
     --secondary-color: #e6f2ff;
     --ter--color: #fff;
+    --one: #000
 }
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -15,6 +17,11 @@ header, main, footer {
     background-color: var(--secondary-color);
 }
 
+header {
+    background-color: var(--one);
+    color: var(--ter--color);
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr ;
@@ -24,5 +31,9 @@ main {
 section {
     padding: 1rem;
     background-color: var(--ter--color);
+}
+
+h1, h2, p { 
+    margin-top: 0;
 }
 
