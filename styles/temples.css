@@ -1,1 +1,12 @@
+:root {
+    --primary-color: #111
+    --secondary-color: #222
+    --accent-color: #333
+    --text-color: #444
+    --white: #555
+    --border-color: #666
+    /*fount*/
+    --heading-fount: "Lora", serif;
+    --body-font: "Roboto", sans-serif;
+}
 
