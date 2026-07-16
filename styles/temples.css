@@ -1,12 +1,102 @@
 :root {
-    --primary-color: #111
-    --secondary-color: #222
-    --accent-color: #333
-    --text-color: #444
-    --white: #555
-    --border-color: #666
-    /*fount*/
-    --heading-fount: "Lora", serif;
-    --body-font: "Roboto", sans-serif;
+    /* Colors */
+    --primary-color: #5b1f84;
+    --secondary-color: #3d1659;
+    --accent-color: #f4eef9;
+    --text-color: #222222;
+    --white: #ffffff;
+    --border-color: #d5c7e2;
+
+    /* Fonts */
+    --heading-font: "Geist Pixel", sans-serif;
+    --body-font: "Roboto Mono", monospace;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--white);
+}
+
+/*Header*/
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+header h1, h2, h3 {
+    margin: 0;
+    padding: 1rem;
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+/*Mobile navigation*/
+nav a {
+    display: block;
+    padding: 1rem;
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+/*Main content*/
+main {
+    max-width: 100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    margin: 0 0 1rem;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/*Temple gallery */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--accent-color);
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/*Footer*/
+footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+}
+
+footer p {
+    margin: 0.35rem;
+}
