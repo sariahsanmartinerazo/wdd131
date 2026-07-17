@@ -6,7 +6,7 @@
         padding-left: 1rem;
     }
 
-    header h1 {
+    header h1, h2 {
         padding: 1rem 0;
         text-align: left;
     }
