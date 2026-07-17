@@ -23,4 +23,15 @@
     .container {
         grid-template-columns: repeat(3,1fr);
     }
+
+    @media screen and (min-width 700px) {
+        #menu {
+            display: none;
+        }
+
+        .navigation {
+            display: flex;
+            flex-direction: row;
+        }
+    }
 }
