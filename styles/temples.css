@@ -82,7 +82,7 @@ header h1 {
 
 .navigation a:hover {
     background-color: var(--accent-color);
-    color: var(--secondary-color);
+    color: var(--white);
     font-weight: 700;
 }
 
