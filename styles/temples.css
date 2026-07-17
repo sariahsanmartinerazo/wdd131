@@ -23,8 +23,10 @@ body {
     background-color: var(--white);
 }
 
-/*Header*/
+/* Header */
+
 header {
+    position: relative;
     background-color: var(--primary-color);
     color: var(--white);
 }
@@ -36,8 +38,41 @@ header h1 {
     text-align: center;
 }
 
-/*Mobile navigation*/
-nav a {
+/* Hamburger button */
+
+#menu {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: 0;
+    background: none;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+/* Mobile navigation */
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
     display: block;
     padding: 1rem;
     color: var(--white);
@@ -45,15 +80,16 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+.navigation a:hover {
     background-color: var(--accent-color);
     color: var(--secondary-color);
     font-weight: 700;
 }
 
-/*Main content*/
+/* Main content */
+
 main {
-    max-width: 100px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -65,7 +101,8 @@ main h1 {
     text-align: center;
 }
 
-/*Temple gallery */
+/* Temple gallery */
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -88,7 +125,13 @@ figure img {
     border-radius: 6px;
 }
 
-/*Footer*/
+figcaption {
+    margin-top: 0.75rem;
+    font-weight: 700;
+}
+
+/* Footer */
+
 footer {
     margin-top: 1rem;
     padding: 1rem;
@@ -100,35 +143,3 @@ footer {
 footer p {
     margin: 0.35rem;
 }
-
-#menu {
-    display: block;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    border: 0;
-    background: none;
-    color: var(--white);
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-#menu::before {
-    content: "☰";
-}
-
-
-#menu.open::before {
-    content: "X";
-}
-
-.navigation {
-    display: none;
-    flex-direction: column;
-}
-
-.navigation.open {
-    display: flex;
-}
-
-
