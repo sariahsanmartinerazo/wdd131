@@ -1,5 +1,5 @@
 const currentYear = document.querySelector("#currentyear");
-const lastModified = document.querySelector("lastModified");
+const lastModified = document.querySelector("#lastModified");
 const menuButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
 /*current copyright year*/
