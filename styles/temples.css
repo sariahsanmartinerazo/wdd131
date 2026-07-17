@@ -94,7 +94,7 @@ main {
     padding: 1rem;
 }
 
-main h1 {
+main h1, h2 {
     margin: 0 0 1rem;
     font-family: var(--heading-font);
     color: var(--primary-color);
