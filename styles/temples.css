@@ -80,8 +80,14 @@ header h1, h2 {
     text-decoration: none;
 }
 
-.navigation a:hover {
+.navigation a:focus {
     background-color: var(--accent-color);
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-color);
     color: var(--white);
     font-weight: 700;
 }
