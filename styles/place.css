@@ -1,0 +1,161 @@
+:root {
+    --primary-color: #006847;
+    --secondary-color: #ce1126;
+    --background-color: #ffffff;
+    --card-background: rgba(255, 255, 255, 0.92);
+    --text-color: #222222;
+    --border-color: #cccccc;
+    --heading-font: Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    padding: 1.5rem;
+    color: white;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-bottom: 8px solid var(--secondary-color);
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero,
+.hero img {
+    display: block;
+    width: 100%;
+}
+
+.hero img {
+    height: auto;
+    object-fit: cover;
+}
+
+.information-card {
+    margin: 0.75rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color);
+}
+
+.information-card h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+dl {
+    margin: 0;
+}
+
+dl div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+dt {
+    font-weight: 700;
+    text-align: right;
+}
+
+dd {
+    margin: 0;
+    text-align: left;
+}
+
+.weather-icon {
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1rem;
+}
+
+footer {
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-top: 8px solid var(--secondary-color);
+}
+
+footer p {
+    margin: 0.4rem 0;
+}
+
+/* Wider-screen layout */
+
+@media screen and (min-width: 700px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        position: relative;
+        display: block;
+    }
+
+    .hero img {
+        width: 100%;
+        min-height: 500px;
+        max-height: 650px;
+        object-fit: cover;
+    }
+
+    .information-card {
+        position: absolute;
+        width: 280px;
+        margin: 0;
+        background-color: var(--card-background);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .information-card h2 {
+        margin: -0.5rem 0 1rem -1.5rem;
+        padding: 0.75rem;
+        color: white;
+        text-align: left;
+        background-color: var(--primary-color);
+    }
+
+    .data {
+        top: 2rem;
+        left: 2rem;
+    }
+
+    .weather {
+        right: 2rem;
+        bottom: 2rem;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+    }
+}
