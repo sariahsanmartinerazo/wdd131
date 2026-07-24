@@ -52,6 +52,11 @@ main {
 .hero img {
     height: auto;
     object-fit: cover;
+    min-height: 500px;
+    max-height: 650px;
+    width: 100%;
+    min-height: 700px;
+    object-fit: cover;
 }
 
 .information-card {
@@ -59,6 +64,8 @@ main {
     padding: 1rem;
     border: 1px solid var(--border-color);
     background-color: var(--background-color);
+    width: 240px;
+    position: absolute;
 }
 
 .information-card h2 {
