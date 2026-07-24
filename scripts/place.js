@@ -6,13 +6,13 @@ const temperature = 8;
 const windSpeed = 12;
 
 currentYear.textContent = new Date().getFullYear();
-lastModified.textContent = `Last Modification: ${document.lastModified}`;
 
-const calculateWindChill = (temperature, windSpeed) =>
-    13.12 +
-    0.6215 * temperature -
-    11.37 * windSpeed ** 0.16 +
-    0.3965 * temperature * windSpeed ** 0.16;
+lastModified.textContent =
+    `Last Modification: ${document.lastModified}`;
+
+function calculateWindChill(temperature, windSpeed) {
+    return 13.12 + 0.6215 * temperature - 11.37 * windSpeed ** 0.16 + 0.3965 * temperature * windSpeed ** 0.16;
+}
 
 if (temperature <= 10 && windSpeed > 4.8) {
     windChillDisplay.textContent =
