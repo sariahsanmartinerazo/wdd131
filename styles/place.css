@@ -18,6 +18,8 @@ body {
     font-family: var(--body-font);
     color: var(--text-color);
     background-color: var(--background-color);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header {
@@ -36,6 +38,13 @@ h2 {
 h1 {
     margin: 0;
     font-size: 2rem;
+}
+
+header,
+main,
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 main {
@@ -125,11 +134,15 @@ footer p {
         display: block;
     }
 
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
     .hero img {
         width: 100%;
-        min-height: 500px;
-        max-height: 650px;
-        object-fit: cover;
+        display: block;
+        height:auto;
     }
 
     .information-card {
@@ -154,7 +167,7 @@ footer p {
     }
 
     .weather {
-        right: 2rem;
+        right: 1.5rem;
         bottom: 2rem;
     }
 
