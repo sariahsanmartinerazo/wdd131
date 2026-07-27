@@ -18,5 +18,5 @@ if (temperature <= 10 && windSpeed > 4.8) {
     windChillDisplay.textContent =
         `${calculateWindChill(temperature, windSpeed).toFixed(1)} °C`;
 } else {
-    windChillDisplay.textContent = "N/A";
+    windChillDisplay.textContent = "N/A";0
 }
