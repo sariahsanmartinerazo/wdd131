@@ -4,9 +4,10 @@ body {
 }
 
 table {
-  width: 400px;
+  width: 500px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-collapse: collapse;
+}
 
   caption {
     caption-side: bottom;
