@@ -1,0 +1,155 @@
+:root {
+    /* Colors */
+    --primary-color: #5b1f84;
+    --secondary-color: #3d1659;
+    --accent-color: #f4eef9;
+    --text-color: #222222;
+    --white: #ffffff;
+    --border-color: #d5c7e2;
+
+    /* Fonts */
+    --heading-font: "Geist Pixel", sans-serif;
+    --body-font: "Roboto Mono", monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--white);
+}
+
+/* Header */
+
+header {
+    position: relative;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+header h1, h2 {
+    margin: 0;
+    padding: 1rem;
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+/* Hamburger button */
+
+#menu {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: 0;
+    background: none;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+/* Mobile navigation */
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-weight: 700;
+}
+
+/* Main content */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    margin: 0 0 1rem;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+h2 {
+    color:var(--white)
+}
+
+/* Temple gallery */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--accent-color);
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+figcaption {
+    margin-top: 0.75rem;
+    font-weight: 700;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+}
+
+footer p {
+    margin: 0.35rem;
+}
