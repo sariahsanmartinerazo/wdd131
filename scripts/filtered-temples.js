@@ -1,11 +1,9 @@
-// Footer
 const currentYear = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
 
 currentYear.textContent = new Date().getFullYear();
 lastModified.textContent = `Last Modification: ${document.lastModified}`;
 
-// Mobile Menu
 const menuButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
 
@@ -14,7 +12,6 @@ menuButton.addEventListener("click", () => {
     menuButton.classList.toggle("open");
 });
 
-// Temple Array
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -88,7 +85,6 @@ const temples = [
     }
 ];
 
-// Display Function
 function displayTemples(filteredTemples) {
 
     const container = document.querySelector(".container");
@@ -129,10 +125,8 @@ function displayTemples(filteredTemples) {
     });
 }
 
-// Show all temples on page load
-displayTemples(temples);
 
-// Filters
+displayTemples(temples);
 
 document.querySelector("#home").addEventListener("click", () => {
     displayTemples(temples);
