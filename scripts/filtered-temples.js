@@ -67,21 +67,21 @@ const temples = [
         location: "Rome, Italy",
         dedicated: "2019, March, 10",
         area: 41010,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-54145.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome-italy-temple.jpg"
     },
     {
         templeName: "Paris France",
         location: "Le Chesnay, France",
         dedicated: "2017, May, 21",
         area: 44175,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-38576.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/400x250/paris-france-temple.jpg"
     },
     {
         templeName: "Tokyo Japan",
         location: "Tokyo, Japan",
         dedicated: "1980, October, 27",
         area: 53997,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-12582.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome-italy-temple.jpg"
     }
 ];
 
