@@ -8,3 +8,8 @@
     --volcano-text: #212529;
 }
 
+header {
+    color: var(--golden-sun)
+    background-color: var(--mountain-green)
+}
+
