@@ -6,6 +6,9 @@
     --golden-sun: #ffb703;
     --sky-background: #f8f9fa;
     --volcano-text: #212529;
+    --heading-font: "Lora", serif;
+    --body-font: "Roboto", sans-serif;
+
 }
 
 header {
