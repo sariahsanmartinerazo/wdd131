@@ -9,7 +9,10 @@
 }
 
 header {
-    color: var(--golden-sun);
+    color: var(--volcano-text);
+}
+
+h1 {
     background-color: var(--mountain-green);
 }
 
@@ -19,10 +22,11 @@ nav {
 
 main {
     color: var(--volcano-text);
-    background-color: var(--mountain-green);
+    background-color: var(--sky-background);
 }
 
 
 footer {
-    color: var(--sky-background);
+    color: var(--volcano-text);
+    background-color: var(--mountain-green);
 }
