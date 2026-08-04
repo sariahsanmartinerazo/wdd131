@@ -8,7 +8,11 @@
     --volcano-text: #212529;
     --heading-font: "Lora", serif;
     --body-font: "Roboto", sans-serif;
+}
 
+body {
+    margin: 0;
+    font-family: var(--body-font);
 }
 
 header {
@@ -27,6 +31,8 @@ main {
     color: var(--volcano-text);
     background-color: var(--sky-background);
     padding: 1rem;
+    max-width: 900px;
+    margin: auto;
 }
 
 
@@ -35,4 +41,9 @@ footer {
     background-color: var(--mountain-green);
     padding: 1rem;
     text-align: center;
+    margin-top: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
 }
