@@ -13,3 +13,17 @@ header {
     background-color: var(--mountain-green);
 }
 
+nav {
+    color: var(--volcano-text);
+}
+
+main {
+    color: var(--volcano-text);
+    background-color: var(--mountain-green);
+}
+
+aside {}
+
+footer {
+    color: var(--sky-background);
+}
