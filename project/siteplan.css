@@ -12,24 +12,27 @@
 }
 
 header {
-    color: var(--volcano-text);
-}
-
-h1 {
+    color: white;
     background-color: var(--mountain-green);
+    text-align: center;
+    padding: 1rem;
 }
 
-nav {
-    color: var(--volcano-text);
+h1, h2, h3 {
+    color: var(--mountain-green);
+    font-family: var(--heading-font);
 }
 
 main {
     color: var(--volcano-text);
     background-color: var(--sky-background);
+    padding: 1rem;
 }
 
 
 footer {
-    color: var(--volcano-text);
+    color: white;
     background-color: var(--mountain-green);
+    padding: 1rem;
+    text-align: center;
 }
