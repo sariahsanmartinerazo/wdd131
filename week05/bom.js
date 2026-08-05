@@ -30,3 +30,7 @@ button.addEventListener("click", () => {
         input.focus();
     }
 });
+
+function setChapterList() {
+    localStorage.setItem("myFavBOMList", JSON.stringify(chaptersArray));
+}
