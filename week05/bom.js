@@ -34,3 +34,21 @@ button.addEventListener("click", () => {
 function setChapterList() {
     localStorage.setItem("myFavBOMList", JSON.stringify(chaptersArray));
 }
+
+function getChapterList() {
+    return JSON.parse(localStorage.getItem("myFavBOMList"));
+}
+
+function displayList(item) {
+    const li = document.createElement("li");
+    const deleteButton = document.createElement("button");
+
+    li.textContent = item;
+
+    deleteButton.textContent = "❌";
+    deleteButton.setAttribute("aria-label", `Remove ${item}`);
+
+    
+    li.append(deleteButton);
+    list.append(li);
+}
