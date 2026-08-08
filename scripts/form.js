@@ -1,7 +1,9 @@
 const currentYear = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
+
 currentYear.textContent = new Date().getFullYear();
 lastModified.textContent = `Last Modification: ${document.lastModified}`;
+
 const products = [
     {
         id: "fc-1888",
@@ -29,10 +31,14 @@ const products = [
         averagerating: 5.0
     }
 ];
+
 const productSelect = document.querySelector("#productName");
+
 products.forEach((product) => {
     const option = document.createElement("option");
+
     option.value = product.id;
     option.textContent = product.name;
+
     productSelect.appendChild(option);
 });
