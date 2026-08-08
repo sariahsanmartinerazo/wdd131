@@ -1,6 +1,18 @@
 :root {
-    --primary-color: #222
-    --secondary-color: #
+    --forest-green: #2D6A4F;
+    --jungle-green: #40916c;
+    --sunset-orange: #f77f00;
+    --golden-yellow: #ffb703;
+    --light-background: #f8f9fa;
+    --dark-text: #212529;
+    --white: #ffffff;
+}
+
+.roboto-mono-<uniquifier> {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {}
