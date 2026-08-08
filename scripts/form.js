@@ -36,3 +36,6 @@ products.forEach((product) => {
     option.textContent = product.name;
     productSelect.appendChild(option);
 });
+
+const reviewCountElement = document.querySelector("#reviewCount");
+reviewCountElement.textContent = `Number of reviews completed: ${reviewCount}`;
