@@ -1,18 +1,16 @@
 :root {
+    /* Colors */
     --forest-green: #2D6A4F;
-    --jungle-green: #40916c;
-    --sunset-orange: #f77f00;
-    --golden-yellow: #ffb703;
-    --light-background: #f8f9fa;
+    --jungle-green: #40916C;
+    --sunset-orange: #F77F00;
+    --golden-yellow: #FFB703;
+    --light-background: #F8F9FA;
     --dark-text: #212529;
-    --white: #ffffff;
-}
+    --white: #FFFFFF;
 
-.roboto-mono-<uniquifier> {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    /* Typography */
+    --heading-font: "Lora", serif;
+    --body-font: "Roboto Mono", monospace;
 }
 
 body {
@@ -57,13 +55,13 @@ label {
     font-weight: 700;
 }
 
-select, 
+select,
 input[type="date"],
 input[type="text"],
 textarea {
     width: 100%;
     padding: 0.75rem;
-    border:1 px solid #999;
+    border: 1px solid #999;
     border-radius: 6px;
     font-family: var(--body-font);
     font-size: 1rem;
@@ -110,6 +108,11 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+input[type="submit"]:hover {
+    background-color: var(--golden-yellow);
+    color: var(--dark-text);
+}
+
 footer {
     margin-top: 2rem;
     padding: 1.5rem;
@@ -121,3 +124,19 @@ footer {
 footer p {
     margin: 0.5rem;
 }
+
+/* Larger screens */
+
+@media screen and (min-width: 600px) {
+
+    main {
+        max-width: 800px;
+        padding: 2rem;
+    }
+
+    form {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
