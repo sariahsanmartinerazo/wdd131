@@ -20,6 +20,10 @@ body {
     background-color: var(--light-background);
 }
 
+.required {
+    color: var(--sunset-orange);
+}
+
 header {
     background-color: var(--forest-green);
     color: var(--white);
