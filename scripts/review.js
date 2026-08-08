@@ -8,4 +8,4 @@ let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
 reviewCount++;
 localStorage.setItem("reviewCount", reviewCount);
 const reviewCountElement = document.querySelector("#reviewCount");
-reviewCountElement.textContent =  `Number of reviews completed: ${reviewCount}`;
+reviewCountElement.textContent = `Number of reviews completed: ${reviewCount}`;
