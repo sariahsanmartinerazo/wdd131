@@ -10,6 +10,13 @@
     --body-font: "Roboto", sans-serif;
 }
 
+.raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 body {
     margin: 0;
     font-family: var(--body-font);
