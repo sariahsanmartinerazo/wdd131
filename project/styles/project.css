@@ -37,7 +37,9 @@ header {
     color: var(--sky-background);
 }
 
-
+nav {
+    color: var(--sky-background);
+}
 h1, h2, h3 {
     color: var(--mountain-green);
     font-family: var(--heading-font);
