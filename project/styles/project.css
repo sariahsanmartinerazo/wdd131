@@ -41,9 +41,13 @@ nav {
     color: var(--sky-background);
 }
 
-h1, h2, h3 {
+h1, {
     color: var(--sky-background);
     font-family: var(--heading-font);
+}
+
+h2, h3 {
+    color: var(--volcano-text);
 }
 
 main {
