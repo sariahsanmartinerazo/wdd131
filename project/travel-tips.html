@@ -29,17 +29,17 @@
         <section class="favorite">
             <h2>Choose your dream destination</h2>
             <p>Which destination would you like to explore?</p>
-            <label for="favoriteDestination">
-                Select a destination:
-            </label>
-            <select id="favoriteDestination" name="favoriteDestination">
-                <option value="">Select a destination</option>
-                <option value="new-zealand">New Zealand</option>
-                <option value="japan">Japan</option>
-                <option value="australia">Australia</option>
-                <option value="brazil">Brazil</option>
-            </select>
-            <button type="button" id="saveFavorite">Save My Favorite</button>
+            <form id="favoriteForm">
+                <label for="favoriteDestination">Select a destination:</label>
+                <select id="favoriteDestination" name="favoriteDestination">
+                    <option value="">Select a destination</option>
+                    <option value="new-zealand">New Zealand</option>
+                    <option value="japan">Japan</option>
+                    <option value="australia">Australia</option>
+                    <option value="brazil">Brazil</option>
+                </select>
+                <button type="button" id="saveFavorite">Save My Favorite</button>
+            </form>
             <p id="favoriteMessage"></p>
             <div id="travelTips" class="travel-tips">
                 <h3>Travel tips</h3>

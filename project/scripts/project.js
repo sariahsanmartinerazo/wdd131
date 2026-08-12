@@ -8,6 +8,7 @@ if (currentYear) {
 if (lastModified) {
     lastModified.textContent = `Last Modification: ${document.lastModified}`;
 }
+
 const destinations = [
     {
         id: "new-zealand",
@@ -56,8 +57,6 @@ const saveFavorite = document.querySelector("#saveFavorite");
 const favoriteMessage = document.querySelector("#favoriteMessage");
 const travelTips = document.querySelector("#travelTips");
 
-favoriteDestination.addEventListener("change", displayTravelTips);
-
 function displayTravelTips() {
     const selectedValue = favoriteDestination.value;
 
@@ -101,11 +100,12 @@ function displayTravelTips() {
     }
 }
 
-saveFavorite.addEventListener("click", () => {
+function saveFavoriteDestination() {
     const selectedValue = favoriteDestination.value;
 
     if (selectedValue === "") {
-        favoriteMessage.textContent = "Please select a destination first.";
+        favoriteMessage.textContent =
+            "Please select a destination first.";
         return;
     }
 
@@ -117,5 +117,39 @@ saveFavorite.addEventListener("click", () => {
 
     favoriteMessage.textContent =
         `${selectedDestination.name} has been saved as your favorite destination!`;
-});
+}
 
+function loadFavoriteDestination() {
+    const savedFavorite = localStorage.getItem("favoriteDestination");
+
+    if (savedFavorite) {
+        const destination = destinations.find(
+            item => item.id === savedFavorite
+        );
+
+        if (destination) {
+            favoriteDestination.value = savedFavorite;
+            favoriteMessage.textContent =
+                `Your favorite destination is ${destination.name}.`;
+            displayTravelTips();
+        }
+    } else {
+        favoriteMessage.textContent =
+            "You don't have a favorite destination yet.";
+    }
+}
+
+if (favoriteDestination) {
+    favoriteDestination.addEventListener("change", displayTravelTips);
+}
+
+if (saveFavorite) {
+    saveFavorite.addEventListener(
+        "click",
+        saveFavoriteDestination
+    );
+}
+
+if (favoriteDestination && favoriteMessage && travelTips) {
+    loadFavoriteDestination();
+}
