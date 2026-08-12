@@ -1,26 +1,26 @@
 :root {
-    /*colors*/
     --mountain-green: #2D6A4F;
     --jungle-green: #40916C;
     --sunset-orange: #f77f00;
     --golden-sun: #ffb703;
     --sky-background: #f8f9fa;
     --volcano-text: #212529;
-    --heading-font: "Lora", serif;
-    --body-font: "Roboto", sans-serif;
+    --heading-font: "Raleway", sans-serif;
+    --body-font: "Figtree", sans-serif;
 }
 
-.raleway- <uniquifier> {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+* {
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
     font-family: var(--body-font);
+    color: var(--volcano-text);
+    background-color: var(--sky-background);
 }
+
+/* HEADER */
 
 header {
     color: white;
@@ -29,68 +29,179 @@ header {
     padding: 1rem;
 }
 
+.site-header {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 .logo {
+    display: block;
     font-family: var(--heading-font);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     text-decoration: none;
-    color: var(--sky-background);
+    color: white;
+    margin-bottom: 0.7rem;
 }
 
 nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
     color: white;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-h1, {
-    color: var(--sky-background);
-    font-family: var(--heading-font);
+nav a:hover {
+    color: var(--golden-sun);
 }
 
-h2, h3 {
-    color: var(--volcano-text);
-}
+/* MAIN */
 
 main {
-    color: var(--volcano-text);
-    background-color: var(--sky-background);
-    padding: 1rem;
-    max-width: 900px;
-    margin: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    min-height: 500px;
 }
 
+.favorite {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
 
-footer {
+h2 {
+    margin-top: 0;
+    color: var(--mountain-green);
+    font-family: var(--heading-font);
+    font-size: 2rem;
+}
+
+.favorite > p {
+    font-size: 1.1rem;
+}
+
+label {
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem;
+    border: 2px solid var(--jungle-green);
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--sunset-orange);
     color: white;
-    background-color: var(--mountain-green);
-    padding: 1rem;
-    text-align: center;
-    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-section {
-    margin-bottom: 2rem;
+button:hover {
+    background-color: #d96800;
 }
+
+#favoriteMessage {
+    color: var(--mountain-green);
+    font-weight: bold;
+}
+
+/* TRAVEL TIPS */
+
 .travel-tips {
-    margin-top: 2rem;
-    padding: 1.5rem;
-    background-color: #f4f8f7;
-    border-radius: 12px;
+    margin-top: 2.5rem;
+    padding: 2rem;
+    background-color: #edf5f2;
+    border-radius: 14px;
 }
 
 .travel-tips h3 {
-    color: #176b87;
-    margin-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    color: var(--mountain-green);
+    font-family: var(--heading-font);
+    font-size: 1.7rem;
+}
+
+.travel-tips > p {
+    line-height: 1.6;
 }
 
 .tip {
     background-color: white;
-    padding: 1rem;
+    padding: 1.2rem;
     margin-top: 1rem;
-    border-radius: 8px;
-    border-left: 4px solid #176b87;
+    border-radius: 10px;
+    border-left: 5px solid var(--jungle-green);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .tip h4 {
     margin-top: 0;
-    color: #176b87;
+    margin-bottom: 0.5rem;
+    color: var(--mountain-green);
+    font-size: 1.1rem;
+}
+
+.tip p {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* FOOTER */
+
+footer {
+    color: white;
+    background-color: var(--mountain-green);
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: var(--golden-sun);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    main {
+        padding: 1.5rem 1rem;
+    }
+
+    .favorite {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
 }
