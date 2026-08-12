@@ -14,13 +14,15 @@
 </head>
 <body>
     <header>
-        <h1>Discover Horizons</h1>
-        <nav>
+        <div class="site-header">
+            <a href="index.html" class="logo">Discover Horizons 🌏</a>
+            <nav>
                 <a href="index.html">Home</a>
                 <a href="destinations.html">Destinations</a>
                 <a href="references.html">References</a>
                 <a href="travel-tips.html">Travel Tips</a>
             </nav>
+        </div>
     </header>
 
     <main>
@@ -30,27 +32,20 @@
             <label for="favoriteDestination">
                 Select a destination:
             </label>
-            <select id="favoriteDestination">
+            <select id="favoriteDestination" name="favoriteDestination">
                 <option value="">Select a destination</option>
-                <option value="new-zealand">
-                    New Zealand
-                </option>
-                <option value="japan">
-                    Japan 
-                </option>
-                <option value="australia">
-                    Australia
-                </option>
-                <option value="brazil">
-                    Brazil
-                </option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Japan">Japan</option>
+                <option value="Australia">Australia</option>
+                <option value="Brazil">Brazil</option>
             </select>
-            <button type="button" id="saveFavorite">
-                Save My Favorite
-            </button>
+            <button type="button" id="saveFavorite">Save My Favorite</button>
             <p id="favoriteMessage"></p>
+            <div id="travelTips" class="travel-tips">
+                <h3>Travel tips</h3>
+                <p>Select a destination to see helpful travel tips.</p>
+            </div>
         </section>
-
     </main>
     
     <footer>
