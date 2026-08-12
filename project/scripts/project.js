@@ -6,6 +6,7 @@ lastModified.textContent = `Last Modification: ${document.lastModified}`;
 
 const destinations = [
     {
+        id: "new-zealand",
         name: "New Zealand",
         continent: "Oceania",
         description: "A country famous for mountains, lakes, and outdoor adventures.",
@@ -15,6 +16,7 @@ const destinations = [
         culturalTip: "Respect Māori culture and learn a few basic words such as 'Kia ora', which means hello."
     },
     {
+        id: "japan",
         name: "Japan",
         continent: "Asia",
         description: "A destination where ancient traditions meet modern cities.",
@@ -24,6 +26,7 @@ const destinations = [
         culturalTip: "Be respectful in temples and shrines. In some places, you should remove your shoes before entering."
     },
     {
+        id: "australia",
         name: "Australia",
         continent: "Oceania",
         description: "A country known for beaches, wildlife, and unique landscapes.",
@@ -33,6 +36,7 @@ const destinations = [
         culturalTip: "Respect Aboriginal and Torres Strait Islander cultures and follow local environmental rules."
     },
     {
+        id: "brazil",
         name: "Brazil",
         continent: "South America",
         description: "A country famous for its vibrant culture and natural beauty.",
@@ -62,7 +66,7 @@ function displayTravelTips() {
     }
 
     const destination = destinations.find(
-        item => item.name.toLowerCase().replace(" ", "-") === selectedValue
+        item => item.id === selectedValue
     );
 
     if (destination) {
@@ -104,9 +108,10 @@ saveFavorite.addEventListener("click", () => {
     localStorage.setItem("favoriteDestination", selectedValue);
 
     const selectedDestination = destinations.find(
-        item => item.name.toLowerCase().replace(" ", "-") === selectedValue
+        item => item.id === selectedValue
     );
 
     favoriteMessage.textContent =
         `${selectedDestination.name} has been saved as your favorite destination!`;
 });
+
