@@ -249,7 +249,6 @@ nav a:hover {
     color: var(--golden-sun);
 }
 
-/* MAIN */
 
 main {
     max-width: 1000px;
@@ -356,7 +355,6 @@ button:hover {
     line-height: 1.5;
 }
 
-/* FOOTER */
 
 footer {
     color: white;
