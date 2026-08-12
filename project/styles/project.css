@@ -187,21 +187,3 @@ footer a:hover {
 
 /* RESPONSIVE */
 
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    main {
-        padding: 1.5rem 1rem;
-    }
-
-    .favorite {
-        padding: 1.5rem;
-    }
-
-    h2 {
-        font-size: 1.6rem;
-    }
-}
