@@ -7,18 +7,22 @@ lastModified.textContent = `Last Modification: ${document.lastModified}`;
 const destinations = [
     {
         name: "New Zealand",
-        description: "Explore mountains, lakes, and outdoor adventures."
+        continent: "Oceania",
+        description: "A country famous for mountains, lakes, and outdoor adventures."
     },
     {
         name: "Japan",
-        description: "Discover ancient traditions and modern cities."
+        continent: "Asia",
+        description: "A destination where ancient traditions meet modern cities."
     },
     {
         name: "Australia",
-        description: "Experience beaches, wildlife, and natural landscapes."
+        continent: "Oceania",
+        description: "A country known for beaches, wildlife, and unique landscapes."
     },
     {
         name: "Brazil",
-        description: "Discover vibrant culture and natural beauty."
+        continent: "South America",
+        description: "A country famous for its vibrant culture and natural beauty."
     }
 ];
